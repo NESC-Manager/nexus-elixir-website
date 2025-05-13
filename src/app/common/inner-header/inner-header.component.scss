@@ -1,0 +1,49 @@
+.nexus-logo {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    filter: drop-shadow(0 0 0 rgba(255, 255, 255, 01));
+}
+
+.inner-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1240px;
+        margin: 0 auto;
+        height: 100%;
+        padding: 0 50px;
+    }
+    li {
+        list-style: none;
+        cursor: pointer;
+        font-size: clamp(16px, 1.5vw, 26px);
+        color: #646464;
+        position: relative;
+        &:last-child {
+            text-transform: capitalize;
+        }
+    }
+}
+
+.arrow-icon {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    &.left {
+        left: -50px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    &.right {
+        right: -50px;
+    }
+}

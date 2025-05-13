@@ -1,0 +1,31 @@
+
+.inner-container {
+    position: relative;
+    height: calc(100% - 75px);
+    color: #262626;
+}
+
+.inner-header {
+    height: 75px;
+    position: relative;
+    background: #ffffff;
+}
+
+.inner-footer {
+    background: #262626;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.copyright-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.footer-texts {
+    font-family: 'Calibri-Regular';
+    color: #ffffff;
+}
