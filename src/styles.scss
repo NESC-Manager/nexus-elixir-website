@@ -78,13 +78,14 @@ h1, h2, h3, h4 {
 }
 
 .service-header {
-    font-size: clamp(45px, 25px, 15px);
+    font-size: clamp(25px, 25px, 15px);
     font-family: 'Calibri-Regular';
     letter-spacing: 1.2px;
     color: rgb(70, 70, 70);
     font-weight: 500;
     margin-inline: 35px;
     margin-block: 30px;
+    display: none;
 }
 
 .software-solutions-cc {
@@ -299,6 +300,7 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
 
     .header {
         background-color: #ffffff !important;
+        position: fixed !important;
         &.fixed {
             width: 100vw !important;
         }
@@ -374,10 +376,65 @@ MEDIA QUERY FOR MOBILE AND SMALL TABLETS
         margin: 0 auto 20px auto;
         width: 150px !important;
         height: 150px !important;
-        .projects-img {
-            transform: translateY(-70%) !important;
-            opacity: 0.5 !important;
+        padding: 0 5px;
+        box-sizing: border-box;
+        background-color: #18122b !important;
+        &:hover {
+            .projects-img {
+                scale: 0.7 !important;
+            }
         }
+        .read-more-button {
+            font-size: 10px !important;
+            width: 100% !important;
+        }
+    }
+
+    .project-block {
+        width: 100% !important;
+    }
+
+    .inner-banner-container {
+        justify-content: flex-end;
+        height: 200px !important;
+    }
+
+    .service-header {
+        display: block !important;
+        br {
+            display: none;
+        }
+    }
+
+    .inner-nav {
+        ul {
+            padding: 0 15px !important;
+        }
+        .arrow-icon {
+            &.left {
+                left: -15px !important;
+                height: 10px;
+                margin-top: 4px;
+            }
+            &.right {
+                right: -15px !important;
+                height: 10px;
+                margin-top: 4px;
+            }
+        }
+    }
+
+    .inner-banner-img {
+        clip-path: polygon(-50px 0, 100% 0, 100% 100%, 25% 100%) !important;
+        scale: 1.5 !important;
+    }
+
+    .nexus-statement {
+        margin-block: 50px !important;
+    }
+
+    .inner-banner-text-container {
+        display: none !important;
     }
 
     .products-block {
