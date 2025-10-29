@@ -1,0 +1,35 @@
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.carousel-logo {
+    max-height: 80px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.carousel-logo:hover {
+    transform: scale(1.05);
+}
+
+.partner-details {
+    color: #c1c1c1;
+    margin-top: 60px;
+}
+
+.partner-name {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: clamp(20px, 2vw, 30px);
+    text-align: center;
+}
+
+.partner-description {
+    font-size: clamp(20px, 1.5vw, 25px);
+}
