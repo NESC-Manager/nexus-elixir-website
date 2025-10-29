@@ -4,11 +4,12 @@ import { OurProductsComponent } from '../our-products/our-products.component';
 import { ContactUsComponent } from '../contact-us/contact-us.component';
 import { HeaderComponent } from '../common/header/header.component';
 import { OurTeamComponent } from '../our-team/our-team.component';
+import { OurPartnersComponent } from '../our-partners/our-partners.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [AboutUsComponent, OurTeamComponent, OurProductsComponent, ContactUsComponent, HeaderComponent],
+  imports: [AboutUsComponent, OurTeamComponent, OurProductsComponent, ContactUsComponent, HeaderComponent, OurPartnersComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush

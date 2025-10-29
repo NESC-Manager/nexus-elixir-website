@@ -1,0 +1,14 @@
+<div class="carousel-container">
+  <img
+    *ngFor="let partner of partners"
+    [src]="partner.logo"
+    [alt]="partner.name"
+    class="carousel-logo"
+    (click)="selectPartner(partner)"
+  />
+</div>
+
+<div class="partner-details" *ngIf="selectedPartner">
+  <div class="partner-name">{{ selectedPartner.name }}</div>
+  <div class="partner-description">{{ selectedPartner.description }}</div>
+</div>
